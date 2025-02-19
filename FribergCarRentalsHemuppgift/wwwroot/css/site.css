@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#logoimg {
+    max-height: 400px;
+}
+
+.fullGallery {
+    display: flex;
+    position: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: center;
+    margin: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}
+.welcomeDesc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}
+.welcomeBoka {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}
+.boka {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}
+.bokaDesc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}

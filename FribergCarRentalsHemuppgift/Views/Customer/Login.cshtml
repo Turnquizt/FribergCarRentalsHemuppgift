@@ -1,0 +1,13 @@
+﻿@using FribergCarRentalsHemuppgift.ViewModel
+@{
+    ViewData["Title"] = "Logga in";
+}
+@model LoginViewModel
+
+<h4>Logga in</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @await Html.PartialAsync("_LoginForm", Model)
+    </div>
+</div>

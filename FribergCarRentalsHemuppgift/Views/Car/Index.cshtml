@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Car Page";
+}
+@model IEnumerable<Car>
+
+<div class="boka"><h2>Boka bil här!</h2></div>
+<div class="bokaDesc"><p>Klicka på den bil du vill boka nedan</p></div>
+
+<div class="fullGallery">
+    @foreach (var car in Model)
+    {
+        <div class="gallery">
+            <a target="_blank" asp-controller="Car" asp-action="Details" asp-route-carId="@car.Id">
+                <img src="@car.ImgUrl" alt="@car.Brand" width="600" height="400">
+            </a>
+            <div class="desc">@car.Brand @car.Model @car.ProductionYear</div>
+        </div>
+    }
+</div>
+

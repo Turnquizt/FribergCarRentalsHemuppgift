@@ -1,0 +1,20 @@
+﻿@using FribergCarRentalsHemuppgift.ViewModel
+@{
+    ViewData["Title"] = "Logga in och Registrera";
+}
+@model LoginAndRegisterViewModel
+
+<h4>Logga in</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @await Html.PartialAsync("_LoginForm", Model)
+    </div>
+</div>
+<h4>Registrera</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @await Html.PartialAsync("_RegisterForm", Model)
+    </div>
+</div>
